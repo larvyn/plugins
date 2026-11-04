@@ -1,7 +1,7 @@
 {
   "id": "larvyn.horizon",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repo": "https://github.com/larvyn/plugin-examples/tree/main/plugins/larvyn.horizon",
-  "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.horizon-v0.1.0/larvyn.horizon-0.1.0.zip",
-  "sha256": "bf9386532c40c654f86a7a7d0e22a2b22b8fdaec4094217db5f694a614b7990f"
+  "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.horizon-v0.1.1/larvyn.horizon-0.1.1.zip",
+  "sha256": "5854c7cb69f4a2679c67846e1ebb1183504d23565b56e40308e7ae5d171d1f4b"
 }

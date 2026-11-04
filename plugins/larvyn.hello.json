@@ -1,7 +1,7 @@
 {
   "id": "larvyn.hello",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "repo": "https://github.com/larvyn/plugin-examples/tree/main/plugins/larvyn.hello",
-  "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.hello-v0.1.0/larvyn.hello-0.1.0.zip",
-  "sha256": "6a3a0712fb17bf275a6cb2174e49bd6647adf9eb888ebccb0869f2800147b9cb"
+  "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.hello-v0.1.1/larvyn.hello-0.1.1.zip",
+  "sha256": "7b89a15720e0df3fa8ccbe8662814ba550a9942ebc3c876808742f88b2c19d6f"
 }

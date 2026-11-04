@@ -31,6 +31,7 @@ The entry only says where the release is. The name, description, permissions and
 - downloads the zip and checks its `sha256`;
 - checks the zip is at most 50 MB and 2000 files, with no paths outside its folder (Larvyn's install limits);
 - reads `larvyn.json` and checks that its `id` and `version` match the entry, and that it lists only known permissions;
+- reads the `icon.svg` next to `larvyn.json`, if there is one: at most 64 KB, and an SVG. It goes into the index, so Larvyn and larvyn.dev can show it;
 - fails if `plugins.json` isn't what the entries build.
 
 Larvyn checks the zip again when it installs, and asks the user to approve the plugin's permissions.

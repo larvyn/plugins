@@ -4,7 +4,7 @@
     {
       "id": "larvyn.hello",
       "name": "Hello",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "The smallest plugin with a view: shows the open project and says hello. Copy it to start your own.",
       "author": "Larvyn",
       "larvyn": ">=0.1.0",
@@ -14,14 +14,15 @@
       ],
       "network": [],
       "repo": "https://github.com/larvyn/plugin-examples/tree/main/plugins/larvyn.hello",
-      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.hello-v0.1.0/larvyn.hello-0.1.0.zip",
-      "sha256": "6a3a0712fb17bf275a6cb2174e49bd6647adf9eb888ebccb0869f2800147b9cb",
-      "size": 1632
+      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.hello-v0.1.1/larvyn.hello-0.1.1.zip",
+      "sha256": "7b89a15720e0df3fa8ccbe8662814ba550a9942ebc3c876808742f88b2c19d6f",
+      "size": 2838,
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiNGRjVBNEUiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjRTAyNjFBIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxNSIgZmlsbD0idXJsKCNnKSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0IDE0KSBzY2FsZSgxLjUpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik0xOCAxMVY2YTIgMiAwIDAgMC0yLTJhMiAyIDAgMCAwLTIgMiIvPgogICAgPHBhdGggZD0iTTE0IDEwVjRhMiAyIDAgMCAwLTItMmEyIDIgMCAwIDAtMiAydjIiLz4KICAgIDxwYXRoIGQ9Ik0xMCAxMC41VjZhMiAyIDAgMCAwLTItMmEyIDIgMCAwIDAtMiAydjgiLz4KICAgIDxwYXRoIGQ9Ik0xOCA4YTIgMiAwIDEgMSA0IDB2NmE4IDggMCAwIDEtOCA4aC0yYy0yLjggMC00LjUtLjg2LTUuOTktMi4zNGwtMy42LTMuNmEyIDIgMCAwIDEgMi44My0yLjgyTDcgMTUiLz4KICA8L2c+Cjwvc3ZnPgo="
     },
     {
       "id": "larvyn.horizon",
       "name": "Horizon",
-      "version": "0.1.0",
+      "version": "0.1.1",
       "description": "Restart, pause and check Laravel Horizon from ⌘K. (Larvyn already adds Horizon to the stack when the app uses laravel/horizon.)",
       "author": "Larvyn",
       "larvyn": ">=0.1.0",
@@ -30,14 +31,15 @@
       ],
       "network": [],
       "repo": "https://github.com/larvyn/plugin-examples/tree/main/plugins/larvyn.horizon",
-      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.horizon-v0.1.0/larvyn.horizon-0.1.0.zip",
-      "sha256": "bf9386532c40c654f86a7a7d0e22a2b22b8fdaec4094217db5f694a614b7990f",
-      "size": 596
+      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.horizon-v0.1.1/larvyn.horizon-0.1.1.zip",
+      "sha256": "5854c7cb69f4a2679c67846e1ebb1183504d23565b56e40308e7ae5d171d1f4b",
+      "size": 1816,
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiM4QjVDRjYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNUIyMUI2Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxNSIgZmlsbD0idXJsKCNnKSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0IDE0KSBzY2FsZSgxLjUpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxwYXRoIGQ9Ik0xMi44MyAyLjE4YTIgMiAwIDAgMC0xLjY2IDBMMi42IDYuMDhhMSAxIDAgMCAwIDAgMS44M2w4LjU4IDMuOTFhMiAyIDAgMCAwIDEuNjYgMGw4LjU4LTMuOWExIDEgMCAwIDAgMC0xLjgzeiIvPgogICAgPHBhdGggZD0iTTIgMTJhMSAxIDAgMCAwIC41OC45MWw4LjYgMy45MWEyIDIgMCAwIDAgMS42NSAwbDguNTgtMy45QTEgMSAwIDAgMCAyMiAxMiIvPgogICAgPHBhdGggZD0iTTIgMTdhMSAxIDAgMCAwIC41OC45MWw4LjYgMy45MWEyIDIgMCAwIDAgMS42NSAwbDguNTgtMy45QTEgMSAwIDAgMCAyMiAxNyIvPgogIDwvZz4KPC9zdmc+Cg=="
     },
     {
       "id": "larvyn.mailpit",
       "name": "Mailpit",
-      "version": "0.2.0",
+      "version": "0.2.1",
       "description": "Catch the mail your app sends: runs Mailpit in the stack, shows the inbox in the sidebar, and points the app's mail settings at it.",
       "author": "Larvyn",
       "larvyn": ">=0.1.0-beta.10",
@@ -51,9 +53,10 @@
         "localhost:8025"
       ],
       "repo": "https://github.com/larvyn/plugin-examples/tree/main/plugins/larvyn.mailpit",
-      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.mailpit-v0.2.0/larvyn.mailpit-0.2.0.zip",
-      "sha256": "12ca1cf33b725d025999b02d530cddfab130e386cc6e69574b529379b58f4ca4",
-      "size": 7252
+      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.mailpit-v0.2.1/larvyn.mailpit-0.2.1.zip",
+      "sha256": "9d49127da628746098254f5d20a9589af4f44303359abbe081c4af60a0829846",
+      "size": 8710,
+      "icon": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZyIgeDE9IjAiIHkxPSIwIiB4Mj0iMSIgeTI9IjEiPgogICAgICA8c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMzQjgyRjYiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMUQ0RUQ4Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxNSIgZmlsbD0idXJsKCNnKSIvPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0IDE0KSBzY2FsZSgxLjUpIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iMS43NSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj4KICAgIDxwYXRoIGQ9Im0yMiA3LTguOTkxIDUuNzI3YTIgMiAwIDAgMS0yLjAwOSAwTDIgNyIvPgogICAgPHJlY3QgeD0iMiIgeT0iNCIgd2lkdGg9IjIwIiBoZWlnaHQ9IjE2IiByeD0iMiIvPgogIDwvZz4KPC9zdmc+Cg=="
     }
   ],
   "revoked": []
