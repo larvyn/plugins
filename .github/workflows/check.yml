@@ -1,0 +1,16 @@
+name: check
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  index:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      # Downloads every listed zip, checks its sha256 and manifest, and
+      # fails if plugins.json is not what the entries build.
+      - run: node scripts/build.mjs --check
