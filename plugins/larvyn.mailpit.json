@@ -1,7 +1,7 @@
 {
   "id": "larvyn.mailpit",
   "version": "0.2.0",
-  "repo": "https://github.com/larvyn/plugin-examples",
+  "repo": "https://github.com/larvyn/plugin-examples/tree/main/plugins/larvyn.mailpit",
   "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.mailpit-v0.2.0/larvyn.mailpit-0.2.0.zip",
   "sha256": "12ca1cf33b725d025999b02d530cddfab130e386cc6e69574b529379b58f4ca4"
 }
