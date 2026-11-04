@@ -1,9 +1,10 @@
 # Larvyn plugins
 
-The registry behind Larvyn's plugin marketplace. Larvyn reads [`plugins.json`](plugins.json) to show plugins in its Discover tab, and to check for updates.
+The registry behind Larvyn's plugin marketplace. Larvyn reads [`plugins.json`](plugins.json) to show plugins in its Marketplace tab (Settings → Plugins) and to check for updates, and [larvyn.dev/plugins](https://larvyn.dev/plugins/) shows the same list.
 
 ## Add your plugin
 
+0. Give your plugin folder a `README.md` and, if you like, an `icon.svg`, next to `larvyn.json` (see [Your plugin's page](#your-plugins-page)).
 1. Build your plugin and attach it to a release of your repo as a `.zip`. **Export** in Larvyn's Settings → Plugins makes one. `larvyn.json` must be at the top of the zip or in its only folder.
 2. Add `plugins/<your plugin id>.json`:
 
@@ -23,6 +24,53 @@ The registry behind Larvyn's plugin marketplace. Larvyn reads [`plugins.json`](p
 To release an update, change `version`, `download` and `sha256`, then build again.
 
 The entry only says where the release is. The name, description, permissions and network hosts in the index come from the `larvyn.json` inside the zip, so a listing always shows what the plugin really asks for.
+
+## Your plugin's page
+
+Larvyn and larvyn.dev link to your `repo`, so the folder's README is your plugin's page. Use the format of the [example plugins](https://github.com/larvyn/plugin-examples/tree/main/plugins/larvyn.mailpit):
+
+```markdown
+<img src="icon.svg" width="64" height="64" alt="">
+
+# My plugin
+
+What it does, in one or two sentences.
+
+**Version** 1.0.0 · **Needs** Larvyn 0.1.0-beta.12 or newer · **By** Your Name · [homepage](https://example.com)
+
+## Install
+
+In Larvyn, open **Settings → Plugins → Marketplace** and install **My plugin**.
+
+Or download `yourname.my-plugin-1.0.0.zip` from [Releases](https://github.com/yourname/my-plugin/releases) and use **Settings → Plugins → Install .zip**.
+
+## What it adds
+
+- **⌘K:** the commands, and what each one runs.
+- **Stack:** the stack items.
+- **Sidebar:** the views.
+
+## Permissions
+
+| Permission | Why |
+|---|---|
+| Run commands in a terminal | What it runs, and why. |
+
+## Requirements
+
+Programs it needs, with their install commands.
+```
+
+Give every permission a reason. People read this table before they click Install.
+
+### Icon
+
+An `icon.svg` next to `larvyn.json` is optional. Without one, Larvyn shows a puzzle piece.
+- Make it square (64 × 64 works well), and draw the background into the SVG. Larvyn shows it at 28 px with rounded corners.
+- At most 64 KB, and a real SVG. The checks refuse anything else.
+- It's shown as an image, so scripts in it never run.
+
+`build.mjs` copies it into the index, so the marketplace and larvyn.dev show it without loading anything from your repo.
 
 ## What the checks do
 
