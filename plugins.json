@@ -1,5 +1,60 @@
 {
   "apiVersion": 1,
-  "plugins": [],
+  "plugins": [
+    {
+      "id": "larvyn.hello",
+      "name": "Hello",
+      "version": "0.1.0",
+      "description": "The smallest plugin with a view: shows the open project and says hello. Copy it to start your own.",
+      "author": "Larvyn",
+      "larvyn": ">=0.1.0",
+      "permissions": [
+        "project.read",
+        "ui.notify"
+      ],
+      "network": [],
+      "repo": "https://github.com/larvyn/plugin-examples",
+      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.hello-v0.1.0/larvyn.hello-0.1.0.zip",
+      "sha256": "6a3a0712fb17bf275a6cb2174e49bd6647adf9eb888ebccb0869f2800147b9cb",
+      "size": 1632
+    },
+    {
+      "id": "larvyn.horizon",
+      "name": "Horizon",
+      "version": "0.1.0",
+      "description": "Restart, pause and check Laravel Horizon from ⌘K. (Larvyn already adds Horizon to the stack when the app uses laravel/horizon.)",
+      "author": "Larvyn",
+      "larvyn": ">=0.1.0",
+      "permissions": [
+        "terminal.run"
+      ],
+      "network": [],
+      "repo": "https://github.com/larvyn/plugin-examples",
+      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.horizon-v0.1.0/larvyn.horizon-0.1.0.zip",
+      "sha256": "bf9386532c40c654f86a7a7d0e22a2b22b8fdaec4094217db5f694a614b7990f",
+      "size": 596
+    },
+    {
+      "id": "larvyn.mailpit",
+      "name": "Mailpit",
+      "version": "0.2.0",
+      "description": "Catch the mail your app sends: runs Mailpit in the stack, shows the inbox in the sidebar, and points the app's mail settings at it.",
+      "author": "Larvyn",
+      "larvyn": ">=0.1.0-beta.10",
+      "permissions": [
+        "terminal.run",
+        "network",
+        "project.env.keys",
+        "ui.notify"
+      ],
+      "network": [
+        "localhost:8025"
+      ],
+      "repo": "https://github.com/larvyn/plugin-examples",
+      "download": "https://github.com/larvyn/plugin-examples/releases/download/larvyn.mailpit-v0.2.0/larvyn.mailpit-0.2.0.zip",
+      "sha256": "12ca1cf33b725d025999b02d530cddfab130e386cc6e69574b529379b58f4ca4",
+      "size": 7252
+    }
+  ],
   "revoked": []
 }
