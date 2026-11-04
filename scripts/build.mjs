@@ -26,6 +26,7 @@ const VERSION = /^\d+\.\d+\.\d+(-[0-9A-Za-z.-]+)?$/
 const SHA256 = /^[0-9a-f]{64}$/
 const MAX_BYTES = 50 << 20 // Larvyn's install limit
 const MAX_FILES = 2000
+const MAX_ICON = 64 << 10 // icon.svg, as Larvyn reads it
 const ENTRY_KEYS = ['id', 'version', 'repo', 'download', 'sha256']
 
 const errors = []
@@ -70,7 +71,8 @@ async function download(where, url) {
 }
 
 // manifestOf finds larvyn.json the way Larvyn does: at the top of the zip,
-// or in its only folder.
+// or in its only folder. It returns the manifest and the icon.svg next to
+// it as a data: URL ('' without one).
 function manifestOf(zip) {
   const dir = mkdtempSync(join(tmpdir(), 'larvyn-plugin-'))
   try {
@@ -85,7 +87,16 @@ function manifestOf(zip) {
     const tops = new Set(names.map((n) => n.split('/')[0]))
     const at = files.includes('larvyn.json') ? 'larvyn.json' : tops.size === 1 ? `${[...tops][0]}/larvyn.json` : null
     if (!at || !files.includes(at)) throw new Error('no larvyn.json at the top of the zip or in its only folder')
-    return JSON.parse(execFileSync('unzip', ['-p', file, at], { encoding: 'utf8', maxBuffer: 1 << 20 }))
+    const manifest = JSON.parse(execFileSync('unzip', ['-p', file, at], { encoding: 'utf8', maxBuffer: 1 << 20 }))
+    const iconAt = at.replace(/larvyn\.json$/, 'icon.svg')
+    let icon = ''
+    if (files.includes(iconAt)) {
+      const svg = execFileSync('unzip', ['-p', file, iconAt], { maxBuffer: MAX_ICON + 1 })
+      if (svg.length > MAX_ICON) throw new Error(`icon.svg is ${svg.length} bytes; the limit is ${MAX_ICON}`)
+      if (!svg.subarray(0, 1024).toString('utf8').includes('<svg')) throw new Error('icon.svg is not an SVG')
+      icon = 'data:image/svg+xml;base64,' + svg.toString('base64')
+    }
+    return { manifest, icon }
   } finally {
     rmSync(dir, { recursive: true, force: true })
   }
@@ -93,7 +104,7 @@ function manifestOf(zip) {
 
 async function build(e) {
   const where = `plugins/${e.file}`
-  let zip, m
+  let zip, m, icon
   try {
     zip = await download(where, e.download)
   } catch (err) {
@@ -106,7 +117,7 @@ async function build(e) {
     return null
   }
   try {
-    m = manifestOf(zip)
+    ;({ manifest: m, icon } = manifestOf(zip))
   } catch (err) {
     fail(where, err.message)
     return null
@@ -130,6 +141,7 @@ async function build(e) {
     download: e.download,
     sha256: e.sha256,
     size: zip.length,
+    ...(icon && { icon }),
   }
 }
 
